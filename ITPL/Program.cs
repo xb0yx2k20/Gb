@@ -33,7 +33,7 @@ if (N != 0) {
         }
     else {
         Console.Write($"{N - 1} ");
-        N -= 1;
+        N -= 3;
     }
     while (N >= 1) {
         Console.Write($"{N} ");
