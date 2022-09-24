@@ -1,44 +1,28 @@
-﻿// Homework 1
+﻿// Homework 2
 
-// Задача 2
-Console.WriteLine("Задача 2 - введите 2 числа, чтобы найти максимальное из них");
+// Задача 10
+Console.WriteLine("Задача 10 - напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.");
 int a = Convert.ToInt32(Console.ReadLine());
-int b = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine($"max = {Math.Max(a, b)}");
+Console.WriteLine(a / 10 % 10);
 
 
-// Задача 4
-Console.WriteLine("Задача 4 - введите 3 числа, чтобы найти максимальное из них");
+// Задача 13
+Console.WriteLine("Задача 13 - напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.");
 int x = Convert.ToInt32(Console.ReadLine());
-int y = Convert.ToInt32(Console.ReadLine());
-int z = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine($"max = {Math.Max(Math.Max(x, y), Math.Max(z, y))}");
+if (x / 100 != 0) {
+    Console.WriteLine(Convert.ToString(x)[2]);
+}
+else {
+    Console.WriteLine("третьей цифры нет");
+}
 
 
-// Задача 6
-Console.WriteLine("Задача 6 - введите число, чтобы определить четность");
+// Задача 15
+Console.WriteLine("Задача 15 -  напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.");
 int n = Convert.ToInt32(Console.ReadLine());
-if (n % 2 == 0) {
+if (n == 6 || n == 7) {
     Console.WriteLine("дa");
 }
 else {
     Console.WriteLine("нет");
-}
-
-// Задача 8
-Console.WriteLine("Задача 8 - введите число, чтобы найти четные числа, которые меньше введенного");
-int N = Convert.ToInt32(Console.ReadLine());
-if (N != 0) {
-    if (N % 2 == 0) {
-        Console.Write($"{N} ");
-        N -= 2;
-        }
-    else {
-        Console.Write($"{N - 1} ");
-        N -= 3;
-    }
-    while (N >= 1) {
-        Console.Write($"{N} ");
-        N -= 2;
-    }
 }
