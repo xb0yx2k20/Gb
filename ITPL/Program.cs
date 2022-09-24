@@ -1,4 +1,6 @@
-﻿// Задача 2
+﻿// Homework 1
+
+// Задача 2
 Console.WriteLine("Задача 2 - введите 2 числа, чтобы найти максимальное из них");
 int a = Convert.ToInt32(Console.ReadLine());
 int b = Convert.ToInt32(Console.ReadLine());
