@@ -1,41 +1,37 @@
-﻿// Homework 3
+﻿// Homework 4
 
-// Задача 19
-Console.WriteLine("Задача 19 - напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.");
+// Задача 25
+Console.WriteLine("Задача 25 - напишите  цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.");
 long a = Convert.ToInt64(Console.ReadLine());
-string aString = Convert.ToString(a);
-int k = 0;
-int fl = 0;
-int lna = aString.Length;
-while (k != (lna / 2)) {
-    if (aString[k] != aString[lna - 1 - k]) {
-        Console.WriteLine("no");
-        fl = 1;
-        break;
-    }
-    k++;
+long b = Convert.ToInt64(Console.ReadLine());
+long res = a;
+while (b != 1) {
+    res *= a;
+    b--;
 }
-if (fl == 0) {
-    Console.WriteLine("yes");
+Console.WriteLine(res);
 
-}
-
-// Задача 21
-Console.WriteLine("Задача 21 - программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.");
+// Задача 27
+Console.WriteLine("Задача 27 - напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.");
 int x1 = Convert.ToInt32(Console.ReadLine());
-int y1 = Convert.ToInt32(Console.ReadLine());
-int z1 = Convert.ToInt32(Console.ReadLine());
-int x2 = Convert.ToInt32(Console.ReadLine());
-int y2 = Convert.ToInt32(Console.ReadLine());
-int z2 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(Math.Round(Math.Sqrt(Math.Pow((x1 - x2), 2) + Math.Pow((y1 - y2), 2) + Math.Pow((z1 - z2), 2)), 2));
+int sum = 0;
+while (x1 != 0) {
+    sum += x1 % 10;
+    x1 /= 10;
+}
+Console.WriteLine(sum);
 
 
 
-// Задача 23
-Console.WriteLine("Задача 23 -  напишите  программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.");
-int n = Convert.ToInt32(Console.ReadLine());
-for (int i = 1; i <= n; i++)
+// Задача 29
+Console.WriteLine("Задача 29 -  напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.");
+	
+int[] nums = new int[8];
+for (int i = 0; i < 8; i++)
 {
-    Console.Write($"{Math.Pow(i, 3)} ");
+    nums[i] = Convert.ToInt32(Console.ReadLine());
+}
+for (int i = 0; i < 8; i++)
+{
+    Console.WriteLine(nums[i]);
 }
