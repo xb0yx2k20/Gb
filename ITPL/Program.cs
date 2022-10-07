@@ -1,37 +1,28 @@
-﻿// Homework 4
+﻿// Homework 5
 
-// Задача 25
-Console.WriteLine("Задача 25 - напишите  цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.");
-long a = Convert.ToInt64(Console.ReadLine());
-long b = Convert.ToInt64(Console.ReadLine());
-long res = a;
-while (b != 1) {
-    res *= a;
-    b--;
+int[] arr(int n) {
+    int[] nums = new int[n];
+    for (int i = 0; i < n; i++) {
+        nums[i] = new Random().Next(-100, 100);
+    }
+    return nums;
 }
-Console.WriteLine(res);
 
-// Задача 27
-Console.WriteLine("Задача 27 - напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.");
-int x1 = Convert.ToInt32(Console.ReadLine());
+// Задача 34, 36, 38
+int[] mas = arr(5);
+int k = 0;
 int sum = 0;
-while (x1 != 0) {
-    sum += x1 % 10;
-    x1 /= 10;
-}
-Console.WriteLine(sum);
+for (int i = 0; i < 5; i++) {
+    Console.Write($"{mas[i]} ");
+    if (mas[i] % 2 == 0) {
+        k++;
+    }
+    if (i % 2 == 1) {
+        sum += mas[i];
+    }
 
-
-
-// Задача 29
-Console.WriteLine("Задача 29 -  напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.");
-	
-int[] nums = new int[8];
-for (int i = 0; i < 8; i++)
-{
-    nums[i] = Convert.ToInt32(Console.ReadLine());
 }
-for (int i = 0; i < 8; i++)
-{
-    Console.WriteLine(nums[i]);
-}
+Console.WriteLine($"\nTask_34 -> {k}");
+Console.WriteLine($"Task_36 -> {sum}");
+Console.WriteLine($"Task_38 -> {mas.Max() - mas.Min()}");
+
