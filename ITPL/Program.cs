@@ -1,43 +1,44 @@
-﻿// Homework 7
+﻿// Homework 9
 
-double[][] arr(int m, int n) {
-    double[][] mas =   new double[m][];
-    for (int i = 0; i < m; i++) {
-        mas[i] = new double[n];
-        for (int j = 0; j < n; j++){
-            mas[i][j] = Math.Round(new Random().NextDouble() * 15, 2, MidpointRounding.AwayFromZero);
+int func(params int[] nums)
+{
+    // Task_64
+    if (nums.Length == 1) {
+        if (nums[0] == 0) {
+            Console.WriteLine();
+            return 1;
+        } else {
+            Console.Write($"{nums[0]} ");
+            func(nums[0] - 1);
         }
     }
-    return mas;
 
+    // Task_66
+    if (nums.Length == 2) {
+        Console.WriteLine((nums[0] + nums[1]) * (nums[1] - nums[0] + 1) / 2);
+    }
+
+    // Task_68
+    int akRes = 0;
+    if (nums.Length == 3) {
+        if (nums[0] == 0) {
+            akRes = nums[1] + 1;
+            return nums[1] + 1;
+        } else if (nums[0] > 0 && nums[1] == 0) {
+            return func(nums[0] - 1, 1, 1);
+        } else if (nums[0] > 0 && nums[1] > 0) {
+            return func(nums[0] - 1, func(nums[0], nums[1] - 1, 1), 1);
+        }
+        return akRes;
+    }
+    return 1;
 }
 
-// Задача 41
-int m = Convert.ToInt32(Console.ReadLine());
-int n = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Task_47");
-double[][] ms = arr(m, n);
-for (int i = 0; i < m; i++){
-    for (int j = 0; j < n;j++) {
-        Console.Write($"{ms[i][j]} ");
-    }    
-    Console.WriteLine();
-}
-int m1 = Convert.ToInt32(Console.ReadLine());
-int n1 = Convert.ToInt32(Console.ReadLine());
 
-if (m1 > m && m1 < 1 && n1 > n && n1 < 1) {
-    Console.WriteLine("Task_50 -> error");
-} else {
-    Console.WriteLine($"Task_50 -> {ms[m1 - 1][n1 - 1]}");
-}
-
-Console.WriteLine("Task_52");
-double sm = 0;
-for (int i = 0; i < n; i++){
-    for (int j = 0; j < m; j++) {
-        sm += ms[j][i];
-    }  
-    Console.WriteLine(Math.Round(sm / m, 2, MidpointRounding.AwayFromZero));
-    //Console.WriteLine(ms[i].Average());
-}
+func(5);
+func(10);
+func(1, 15);
+func(4, 8);
+int res = func(2, 3, 'a');
+int res1 = func(3, 2, 'a');
+Console.WriteLine($"{res}\n{res1}");
