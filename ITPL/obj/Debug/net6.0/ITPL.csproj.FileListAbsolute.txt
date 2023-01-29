@@ -1,0 +1,15 @@
+C:\Users\Xboyx\Documents\Gb\ITPL\obj\Debug\net6.0\ITPL.csproj.AssemblyReference.cache
+C:\Users\Xboyx\Documents\Gb\ITPL\obj\Debug\net6.0\ITPL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Xboyx\Documents\Gb\ITPL\obj\Debug\net6.0\ITPL.AssemblyInfoInputs.cache
+C:\Users\Xboyx\Documents\Gb\ITPL\obj\Debug\net6.0\ITPL.AssemblyInfo.cs
+C:\Users\Xboyx\Documents\Gb\ITPL\obj\Debug\net6.0\ITPL.csproj.CoreCompileInputs.cache
+C:\Users\Xboyx\Documents\Gb\ITPL\bin\Debug\net6.0\ITPL.exe
+C:\Users\Xboyx\Documents\Gb\ITPL\bin\Debug\net6.0\ITPL.deps.json
+C:\Users\Xboyx\Documents\Gb\ITPL\bin\Debug\net6.0\ITPL.runtimeconfig.json
+C:\Users\Xboyx\Documents\Gb\ITPL\bin\Debug\net6.0\ITPL.dll
+C:\Users\Xboyx\Documents\Gb\ITPL\bin\Debug\net6.0\ITPL.pdb
+C:\Users\Xboyx\Documents\Gb\ITPL\obj\Debug\net6.0\ITPL.dll
+C:\Users\Xboyx\Documents\Gb\ITPL\obj\Debug\net6.0\refint\ITPL.dll
+C:\Users\Xboyx\Documents\Gb\ITPL\obj\Debug\net6.0\ITPL.pdb
+C:\Users\Xboyx\Documents\Gb\ITPL\obj\Debug\net6.0\ITPL.genruntimeconfig.cache
+C:\Users\Xboyx\Documents\Gb\ITPL\obj\Debug\net6.0\ref\ITPL.dll
