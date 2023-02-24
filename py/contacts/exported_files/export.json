@@ -1,0 +1,42 @@
+[
+    {
+        "first_name": "Egor",
+        "last_name": "Letov",
+        "phone_number": "8-750-282-45-21"
+    },
+    {
+        "first_name": "Gendalf",
+        "last_name": "Grey",
+        "phone_number": "111"
+    },
+    {
+        "first_name": "Neo",
+        "last_name": "Anderson",
+        "phone_number": "8110"
+    },
+    {
+        "first_name": "Alisa",
+        "last_name": "Yandexovna",
+        "phone_number": "8-800-250-96-39"
+    },
+    {
+        "first_name": "Ozzy",
+        "last_name": "Osborne",
+        "phone_number": "666"
+    },
+    {
+        "first_name": "Gleb",
+        "last_name": "Zheglov",
+        "phone_number": "02"
+    },
+    {
+        "first_name": "Amir",
+        "last_name": "Bratik",
+        "phone_number": "12345678"
+    },
+    {
+        "first_name": "Harry",
+        "last_name": "Potter",
+        "phone_number": "12321"
+    }
+]
