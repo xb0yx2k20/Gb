@@ -5,7 +5,8 @@ def user_choice():
           "\n 2. Delete contact"
           "\n 3. Export contacts in file"
           "\n 4. Import contacts from file"
-          "\n 5. Stop programm"
+          "\n 5. Change contact"
+          "\n 6. Stop programm"
           "\n\n Choose number \n"
           )
     nh.get_num()
