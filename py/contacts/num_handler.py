@@ -6,7 +6,7 @@ def get_num():
     check_num(n)
 
 def check_num(x):
-    if x < '1' or x > '5':
+    if x < '1' or x > '6':
         print(colored("Error, try again", "red"))
         get_num()
     else:
