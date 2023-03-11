@@ -1,4 +1,3 @@
-
 import org.json.simple.JSONObject;
 import java.io.FileReader;
 import org.json.simple.parser.JSONParser;
