@@ -4,4 +4,3 @@ for i in range(1, n + 1):
     res.append(a1 + d*(i - 1))
 
 print(res)
-print(res)
