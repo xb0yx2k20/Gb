@@ -14,7 +14,7 @@ public class task2 {
     }
 
     public static void bubbleSort(int[] array) {
-        Logger logger = Logger.getLogger(test.class.getName());
+        Logger logger = Logger.getLogger(Main.class.getName());
         logger.setLevel(Level.INFO);
         ConsoleHandler ch = new ConsoleHandler ();
         logger.addHandler(ch);
