@@ -1,13 +1,13 @@
 package org.example;
 
-public class Cat implements Runners{
-    private int maxRun;
+public class Human implements Runners {
     private int maxHeight;
+    private int maxRun;
     private String name;
 
-    public Cat(int maxRun, int maxHeight, String name) {
-        this.maxRun = maxRun;
-        this.maxHeight = maxHeight;
+    public Human(int maxRun, int maxHeight, String name) {
+        this.maxRun=maxRun;
+        this.maxHeight=maxHeight;
         this.name=name;
     }
 
@@ -25,4 +25,6 @@ public class Cat implements Runners{
     public String getName() {
         return name;
     }
+
+
 }
