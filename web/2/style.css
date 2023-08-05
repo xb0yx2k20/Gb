@@ -18,6 +18,7 @@ h1, h2, li, footer {
     top: 90%;
     left: 50%;
     transform: translate(-50%, 50%);
+}
 
 .link {
     color: chartreuse;
