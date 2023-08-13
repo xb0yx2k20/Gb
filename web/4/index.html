@@ -1,0 +1,32 @@
+<?php
+$workExperience = [
+    [
+        "position" => "Web Developer",
+        "company" => "ABC Tech",
+        "duration" => "Jan 2020 - Present"
+    ],
+    [
+        "position" => "UI/UX Designer",
+        "company" => "XYZ Design Studio",
+        "duration" => "May 2018 - Dec 2019"
+    ],
+];
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Опыт работы</title>
+</head>
+<body>
+    <h1>Опыт работы</h1>
+    <ul>
+        <?php foreach ($workExperience as $experience): ?>
+            <li>
+                <strong><?= $experience["position"]; ?></strong><br>
+                <?= $experience["company"]; ?><br>
+                <?= $experience["duration"]; ?>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+</body>
+</html>
