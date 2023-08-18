@@ -1,9 +1,9 @@
 # Задание 1
 ## Запрос 1: Суммы заказов, выполненных 1 января 2016 года
 <pre>
-SELECT SUM(amount) AS total_amount
+SELECT SUM(amt) AS total_amt
 FROM orders
-WHERE order_date = '2016-01-01';
+WHERE odate = '2016-01-01';
 </pre>
 
 ## Запрос 2: Количество различных значений поля "city" в таблице заказчиков
@@ -15,16 +15,16 @@ WHERE city IS NOT NULL;
 
 ## Запрос 3: Наименьшая сумма для каждого заказчика
 <pre>
-SELECT customer_id, MIN(amount) AS min_amount
+SELECT cnum, MIN(amt) AS min_amt
 FROM orders
-GROUP BY customer_id;
+GROUP BY cnum;
 </pre>
 
 ## Запрос 4: Заказчики, имена которых начинаются с буквы "Г"
 <pre>
 SELECT *
 FROM customers
-WHERE customer_name LIKE 'Г%';
+WHERE cname LIKE 'Г%';
 </pre>
 
 ## Запрос 5: Высший рейтинг в каждом городе:
@@ -40,28 +40,28 @@ GROUP BY city;
 <pre>
 SELECT *
 FROM orders
-ORDER BY amount DESC;
+ORDER BY amt DESC;
 </pre>
 
 ## Отсортировать поле "сумма" в порядке возрастания
 <pre>
 SELECT *
 FROM orders
-ORDER BY amount ASC;
+ORDER BY amt ASC;
 </pre>
 
 ## Вывести 5 строк с наибольшей заработной платой (поле "Зарплата")
 <pre>
 SELECT *
 FROM employees
-ORDER BY Зарплата DESC
+ORDER BY salary DESC
 LIMIT 5;
 </pre>
 
 ## Группировка сотрудников по специальности "рабочий", зарплата которых превышает 20000
 <pre>
-SELECT специальность, COUNT(*) AS количество_сотрудников
+SELECT speciality, COUNT(*) AS seniority
 FROM employees
-WHERE специальность = 'рабочий' AND Зарплата > 20000
-GROUP BY специальность;
+WHERE speciality = 'рабочий' AND salary > 20000
+GROUP BY speciality;
 </pre>
