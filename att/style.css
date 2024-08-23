@@ -1,0 +1,34 @@
+.btnPan {
+    height: 300px;
+    width: 500px;
+    background-color: purple;
+}
+
+.btnPlay {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-image: url(assets/play_btn.png);
+    cursor: pointer;
+}
+
+.btnPause {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-image: url(assets/pause_btn.png);
+    cursor: pointer;
+}
+
+.btnStop {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-image: url(assets/stop_btn.png);
+    cursor: pointer;
+}
+
+.videoBox {
+    width: 500px;
+}
+
