@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hw1</title>
+</head>
+<body>
+    <script>
+        const arr = [1, 5, 7, 9]
+        function task1(mas) {
+            return Math.min(...mas)
+        }
+        console.log(task1(arr))
+
+        function createCounter() {
+            let count = 0;
+
+            return {
+                increment: function() {
+                    count++;
+                    return count;
+                },
+                decrement: function() {
+                    count--;
+                    return count;
+                }
+            };
+        }
+
+        const counter = createCounter();
+        console.log(counter.increment());
+        console.log(counter.decrement()); 
+
+        function findElementByClass(root, className) {
+
+            if (root.classList && root.classList.contains(className)) {
+                return root;
+            }
+
+
+            for (let i = 0; i < root.children.length; i++) {
+                const found = findElementByClass(root.children[i], className);
+                if (found) {
+                    return found;
+                }
+            }
+
+            return null;
+        }
+
+
+        const rootElement = document.getElementById('root');
+        const targetElement = findElementByClass(rootElement, 'my-class');
+        console.log(targetElement);
+
+    </script>
+
+</body>
+</html>
